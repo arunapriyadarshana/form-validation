@@ -1,0 +1,18 @@
+.side-nav .nav-menu {
+    margin-top: 9.4%;
+    height: 80vh;
+  }
+
+.about-title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.about-title hr{
+    border: 3px solid;
+}
+
+.about-details{
+    margin-top: 20px;
+    font-size: 1rem;
+}

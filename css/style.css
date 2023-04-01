@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander&display=swap");
+body {
+  font-family: "Grandstander", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+}
+
+.header h2,
+.header h3,
+.header a {
+  color: #34495e;
+}
+
+.header a,
+.logout-btn {
+  text-decoration: none;
+}
+
+.header .logo {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.45em;
+}
+
+.header .main-nav {
+  margin-top: 5px;
+}
+.header .logo a,
+.header .logout-btn,
+.header .main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header .main-nav a,
+.logout-btn {
+  color: #34495e;
+  font-size: 0.99em;
+}
+
+.header .main-nav a:hover,
+.logout-btn:hover {
+  color: #718daa;
+}
+
+.header {
+  z-index: 2000;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 3% 1% 0;
+  border: 1px solid #a2a2a2;
+  background-color: #f4f4f4;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.main-container {
+  display: flex;
+}
+
+.side-nav,
+.nav-menu {
+  height: 97%;
+  margin-top: 1.4%;
+}
+.side-nav .nav-menu {
+  height: 60vh;
+  list-style: none;
+  padding: 40px 0;
+  width: 200px;
+  background-color: #3498db;
+}
+.side-nav .nav-item {
+  position: relative;
+  padding: 10px 20px;
+}
+.nav-item.active {
+  background-color: #fff;
+  box-shadow: 0px -3px rgba(0, 0, 0, 0.2), 0px 3px rgba(0, 0, 0, 0.2);
+}
+.nav-item.active a {
+  color: #2980b9;
+}
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-text {
+  padding: 0 20px;
+}
+.side-nav .nav-item.active::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%;
+  right: 0;
+  height: 150%;
+  width: 20px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 20px 0 0 #fff;
+}
+.side-nav .nav-item.active::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 100%;
+  right: 0;
+  height: 150%;
+  width: 20px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 -20px 0 0 #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+section {
+  padding: 60px 0;
+  min-height: 60vh;
+}
+.contact-social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact-area {
+  border-bottom: 1px solid #353c46;
+}
+
+.row {
+  position: relative;
+}
+.contact-content {
+  /* position: absolute; */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-content p {
+  font-size: 15px;
+  margin: 30px 0 60px;
+  position: relative;
+  text-align: center;
+}
+
+.contact-content p::after {
+  background: #353c46;
+  bottom: -30px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 80%;
+}
+
+.contact-content h6,
+.contact-content h6 a {
+  text-decoration: none;
+  color: #8b9199;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-content span {
+  color: #353c47;
+  margin: 0 10px;
+}
+
+.contact-social > ul {
+  display: inline-flex;
+}
+
+.contact-social ul li a {
+  border: 1px solid #8b9199;
+  color: #8b9199;
+  display: flex;
+  height: 40px;
+  margin: 20px;
+  transition: all 0.4s ease 0s;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-social ul li a:hover {
+  border: 1px solid #59fa02;
+  color: #59fa02;
+}
+
+.contact-content img {
+  max-width: 210px;
+}
+
+section,
+footer {
+  background: #1a1e25;
+  color: #868c96;
+}
+
+footer p {
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer img {
+  width: 44px;
+}
+
+.nav-active {
+  background: rgb(5, 0, 255);
+  background: linear-gradient(
+    167deg,
+    rgba(5, 0, 255, 1) 9%,
+    rgba(13, 39, 252, 1) 19%,
+    rgba(52, 232, 237, 1) 69%
+  );
+  color: white !important;
+  border-radius: 20px;
+}
+
+.about-us {
+  max-width: 500px;
+  margin-top: 10%;
+  margin-left: 20%;
+}

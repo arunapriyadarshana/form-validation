@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/login.css" />
+  <script src="../js/login.js"></script>
+  <script src="https://kit.fontawesome.com/44a58941c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <!-- navbar -->
+   <header class="header">
+    <h1 class="logo"><a href="index.html">Wisdom Academy</a></h1>
+    <ul class="main-nav">
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- vertical nav bar -->
+  <div class="main-container">
+    <nav class="side-nav">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html"><i class="fas fa-tachometer-alt"></i><span class="menu-text">Home</span></a>
+        </li>
+        <li class="nav-item active">
+          <a href="login.html"><i class="fas fa-user"></i><span class="menu-text">Login</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="register.html"><i class="fas fa-address-card"></i><span class="menu-text">Register</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="form-container">
+      <div class="title">Login</div>
+      <div class="content">
+        <form action="#" name="frm" onsubmit="return redirect()">
+          <div class="user-details">
+            <div class="input-box country">
+              <span class="details">User Type</span>
+              <select name="country" id="country">
+                <option value="none">None</option>
+                <option value="sl">Administrator</option>
+                <option value="in">User</option>
+              </select>
+              <div class="err">
+                <p id="country-err"></p>
+              </div>
+            </div>
+            <div class="input-box">
+              <span class="details">User ID</span>
+              <input type="text" placeholder="Enter your user ID" name="userId" />
+              <div class="err">
+                <p id="userid-err"></p>
+              </div>
+            </div>
+            
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="password" placeholder="Enter your password" name="password" />
+              <div class="err">
+                <p id="password-err"></p>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Login" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+
+</html>

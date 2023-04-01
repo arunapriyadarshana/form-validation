@@ -1,0 +1,77 @@
+header {
+  /* position: relative !important; */
+  z-index: -10000;
+}
+
+.popup-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  padding: 3rem;
+  gap: 1rem;
+  background-color: white;
+  box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translateY(5%);
+  visibility: hidden;
+  transition: all 0.25s;
+  z-index: -1;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  width: 60px;
+  padding: 0.5rem;
+  background-color: blue;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.25s;
+}
+
+.button:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  position: absolute;
+  color: black;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1.25rem;
+  right: 0;
+  top: 0;
+  margin: 1rem 1.5rem;
+}
+
+.popup.active {
+  opacity: 1;
+  transform: translateY(0%);
+  visibility: visible;
+  z-index: 1;
+}
+
+.dashboard-section  {
+  background-image: url("../images/At-Risk-Dashboard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}

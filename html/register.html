@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/register.css" />
+  <script src="../js/script.js"></script>
+  <script src="https://kit.fontawesome.com/44a58941c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <!-- navbar -->
+   <header class="header">
+    <h1 class="logo"><a href="index.html">Wisdom Academy</a></h1>
+    <ul class="main-nav">
+      <li><a href="about.html" >About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- vertical nav bar -->
+  <div class="main-container">
+    <nav class="side-nav">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html"><i class="fas fa-tachometer-alt"></i><span class="menu-text">Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html"><i class="fas fa-user"></i><span class="menu-text">Login</span></a>
+        </li>
+        <li class="nav-item active">
+          <a href="register.html"><i class="fas fa-address-card"></i><span class="menu-text">Register</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="form-container">
+      <div class="title">Registration</div>
+      <div class="content">
+        <form action="#" name="frm" onsubmit="return redirect()">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your name" name="name" />
+              <div class="err">
+                <p id="name-err"></p>
+              </div>
+            </div>
+            <div class="input-box">
+              <span class="details">User ID</span>
+              <input type="text" placeholder="Enter your user ID" name="userId" />
+              <div class="err">
+                <p id="userid-err"></p>
+              </div>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" placeholder="Enter your email" name="email" />
+              <div class="err">
+                <p id="email-err"></p>
+              </div>
+            </div>
+            <div class="gender-details">
+              <span class="gender-title">Gender</span>
+              <div class="gender-radio">
+                <input type="radio" value="m" name="gender" id="male" class="custom-radio box-shadow" />
+                <label for="male">Male</label>
+                <input type="radio" value="f" name="gender" id="female" class="custom-radio box-shadow" />
+                <label for="female">Female</label>
+              </div>
+              <div class="err">
+                <p id="gender-err"></p>
+              </div>
+            </div>
+            <div class="input-box addr">
+              <span class="details">Address</span>
+              <div class="address">
+                <input type="text" placeholder="Lane" />
+                <input type="text" placeholder="City" />
+                <input type="text" placeholder="State" />
+                <input type="number" placeholder="Zip Code" />
+              </div>
+            </div>
+            <div class="input-box country">
+              <span class="details">Country</span>
+              <select name="country" id="country">
+                <option value="none">None</option>
+                <option value="sl">Sri Lanka</option>
+                <option value="in">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">England</option>
+              </select>
+              <div class="err">
+                <p id="country-err"></p>
+              </div>
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="password" placeholder="Enter your password" name="password" />
+              <div class="err">
+                <p id="password-err"></p>
+              </div>
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input type="password" placeholder="Confirm your password" name="confirmPassword" />
+              <div class="err">
+                <p id="conPassword-err"></p>
+              </div>
+            </div>
+            <div class="gender-details">
+              <span class="gender-title">Language</span>
+              <div class="gender-radio">
+                <input type="checkbox" name="lan" value="english" class="custom-box box-shadow" />
+                <label for="english">English</label>
+                <input type="checkbox" name="lan" value="non-english" class="custom-box box-shadow" />
+                <label for="non-english">Non English</label>
+              </div>
+              <div class="err">
+                <p id="language-err"></p>
+              </div>
+            </div>
+            <div class="input-box about-area">
+              <span class="details">About</span>
+              <textarea name="" id="" cols="70" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
